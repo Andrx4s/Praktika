@@ -65,8 +65,10 @@
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="inputColor" class="form-label">Ваш цвет</label>
-                    <input type="text"
+                    <label for="inputColor" class="form-label">Ваш цвет в HEX(без #)</label>
+                    <input minlength="6"
+                           maxlength="6"
+                           type="text"
                            class="form-control @error('color') is-invalid @enderror"
                            id="inputColor"
                            name="color"

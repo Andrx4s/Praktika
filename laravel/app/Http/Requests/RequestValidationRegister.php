@@ -25,9 +25,9 @@ class RequestValidationRegister extends FormRequest
     {
         return [
             "name" => 'required',
-            "email" => 'required|unique:users',
+            "email" => 'required|email|unique:users',
             "age" => 'required|numeric',
-            "size" => 'required',
+            "size" => 'required|numeric',
             "color" => 'required',
             "password" => 'required|confirmed'
         ];
